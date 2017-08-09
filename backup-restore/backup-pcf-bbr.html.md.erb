@@ -215,6 +215,7 @@ Perform the following steps to check that your BOSH Director is reachable and ha
       bbr deployment \
       --target BOSH\_DIRECTOR\_IP \
       --username BOSH\_CLIENT \
+      --password $BOSH_CLIENT_SECRET \
       --deployment DEPLOYMENT\_NAME \
       --ca-cert PATH\_TO\_BOSH\_SERVER\_CERT \
       pre-backup-check
@@ -244,6 +245,7 @@ $ BOSH\_CLIENT\_SECRET=BOSH\_CLIENT\_SECRET \
   nohup bbr deployment \
   --target BOSH\_DIRECTOR\_IP \
   --username BOSH\_CLIENT \
+  --password $BOSH_CLIENT_SECRET \
   --deployment DEPLOYMENT\_NAME \
   --ca-cert PATH\_TO\_BOSH\_SERVER\_CERT \
   backup</pre>
